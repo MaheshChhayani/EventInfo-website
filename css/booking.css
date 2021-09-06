@@ -1,0 +1,142 @@
+@import url(http://weloveiconfonts.com/api/?family=iconicfill);
+@import url(https://fonts.googleapis.com/css?family=Arvo);
+/* iconicfill */
+[class*="iconicfill-"]:before {
+  font-family: 'IconicFill', sans-serif;
+}
+.wrap{width:300px;}
+.center{
+ top:50%;
+ transform:translateY(-50%);
+ position:relative;
+ margin:auto;}
+
+input{
+  display:block;
+    width: 300px;
+    padding: 15px 0 15px 12px;
+    border: none;
+    outline: none;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    border: 1px solid #777;
+    border-radius: 6px;
+    position: relative;
+    font-size: 13px;
+}
+
+label{
+    display: block;
+    position: static;
+    margin: 0;
+    padding: 0;
+    color:#fff;
+    font-family: 'Arvo';
+    font-size: 16px;
+}
+
+.wrap-label{
+  width: 300px;
+  height: 34px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  bottom: -15px;
+  overflow: hidden;}
+
+.iconicfill-pen-alt2{
+    position: absolute;
+    left: 10px;
+    color: #fff;
+    font-size:19px;
+    opacity: 1;
+    top: 0;
+    transform:translateX(-100px);
+}
+
+h1,h3{
+	text-align: center;
+}
+
+.row{
+	 position: absolute;
+  left: 40%;
+  
+}
+
+.search_categories{
+  font-size: 13px;
+  padding: 10px 8px 0px 14px;
+  background: #fff;
+  border: 1px solid #777;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.search_categories .select{
+  width: 100%;
+  background:url('arrow.png') no-repeat;
+  background-position:80% center;
+  padding-bottom: -10px;
+}
+
+.search_categories .select select{
+  background: transparent;
+  line-height: 1;
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #008CBA;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px;
+  width: 315px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* ==== Pen animation ==== */
+.move-pen{animation: move-pen 1s ease-in infinite alternate;}
+@keyframes move-pen{
+    from{transform:translateX(-4px) rotate(6deg);}
+    to{transform:translateX(4px) rotate(-3deg);}
+}
